@@ -23,23 +23,21 @@ function drawStroked(text, x, y) {
 
 drawStroked(upperLine.toUpperCase(), 50, 150);
 
-
-function writeFirstLine(text) {
-    const length = text.length;
-    let pContent = "";
-    for (let i = 0; i < length; i++) {
-        if (i % 2 === 0) {
-            pContent += `<span>${text[i]}</span>`;
+// Wrap letters in <span> for the overlappinng effect
+// (string, bool) => string
+// Takes the text, and parity as argument
+// Parity represent whether to raise the even or odd characters
+// i.e if parity == 0, then the even characters raise (counting from 0)
+// returns the produced html string
+function makeOverlappingLetters(text, parity) {
+    let htmlString = "";
+    for (let i = 0; i < text.length; i++) {
+        if (i % 2 === parity) {
+            htmlString += `<span>${text[i]}</span>`;
         }
         else {
-            pContent += text[i];
+            htmlString += text[i];
         }
     }
-    const p = document.createElement("p");
-    p.innerHTML = pContent;
-    article.appendChild(p);
+    return htmlString;
 }
-
-writeFirstLine("WHO'S THAT".toLowerCase());
-writeFirstLine("PoKéMoN", 2);
-
