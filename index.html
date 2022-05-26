@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-US">
     <head>
-        <title>Who's that Pokemon?</title>
+        <title>Pokemon Fonts Generator</title>
         <meta charset="utf-8">
         <link rel="stylesheet" href="style.css">
         <script src="script.js" defer></script>
@@ -11,7 +11,7 @@
     </head>
     <body>
         <section>
-            <div class="shade"><h1>Pokemon fonts Generator</h1></div>
+            <h1>Pokemon Fonts Generator</h1>
             
             <div class="form">
                 <label for="text">Text: </label><br>
@@ -20,15 +20,9 @@
                 <br>
                 <label for="size">Font size:</label> <br>
                 <div class="range">
-                <input type="range" min="12" max="48" step="2" id="size" value="24">
-                <output for="size">24px</output>
+                <input type="range" min="12" max="48" step="2" id="size" value="16">
+                <output for="size"></output>
                 </div>
-
-                <div>
-                    <input type="checkbox" id="shadow" value="enable" checked>
-                    <label for="shadow">Enable shadows?</label>
-                </div>
-                <br>
                 <button type="submit">Generate</button>
             </div>
         <div class="font-space"></div>

@@ -1,20 +1,69 @@
-// Slider outpuut
+const textarea = document.querySelector("textarea");
+const fontSpace = document.querySelector(".font-space");
 const range = document.querySelector('#size');
 const output = document.querySelector('output');
+const btn = document.querySelector("button");
 
-output.textContent = `${range.value}px`;
-
+// Slider outpuut
+output.textContent = `${range.value}px`
 range.addEventListener('input', function() {
   output.textContent = `${range.value}px`;
 });
 
 // Generate button
-const btn = document.querySelector("button");
+btn.addEventListener("click", generate);
 
+function generate() {
+    clearP();
+    let text = textarea.value;
+    const sizeStr = output.value;
+    const size = Number(sizeStr.slice(0, -2));
 
+    fontSpace.style.fontSize = sizeStr;
+    text = processText(text);
 
+    const p = document.createElement("p");
+    p.innerHTML = text;
+    fontSpace.appendChild(p);
+    raiseAllMiddleLetters(p);
+}
 
-const fontSpace = document.querySelector(".font-space");
+function clearP() {
+    const p = document.querySelector("p");
+    if (p) {
+        fontSpace.removeChild(p);
+    }
+}
+
+function processText(text) {
+    text = text.trim();
+    const wordArray = text.split(" ");
+    let strArray = [];
+    let str = "";
+    for (const word of wordArray) {
+        if (word.length === 0) {
+            continue;
+        }
+        if (word.slice(0, 2) === "**" && word.slice(-2) === "**") {
+            const obj = splitKeyword(word.slice(2, -2));
+            str = `<span class="antiClockwise">${makeOverlappingLetters(obj.left)}</span>`
+                + `<span class="mid">${obj.mid}</span>`
+                + `<span class="clockwise">${makeOverlappingLetters(obj.right)}</span>`;
+        }
+        else {
+            str = makeOverlappingLetters(word);
+        }
+        strArray.push(str);
+    }
+    return strArray.join(" ");
+}
+
+function raiseAllMiddleLetters(p) {
+    const leftArray = document.querySelectorAll(".antiClockwise");
+    for (const left of leftArray) {
+        raiseMidLetter(left);
+    }
+}
 
 // Wrap letters in <span> for the overlappinng effect
 // (string, bool) => string
@@ -48,16 +97,13 @@ function splitKeyword(text) {
 }
 
 // Finds the elevaation for  middle letter
-function raiseMidLetter(p) {
+function raiseMidLetter(left) {
     // Get references to first and mid span
-    const left = p.firstChild;
     const mid = left.nextSibling;
-
     // Get the length of left part, (i.e. hypotenuse of trianlge)
     // Strip the "px", and convert it to number.
     const widthStr = window.getComputedStyle(left).width;
     const width = Number(widthStr.slice(0, -2));
-
     // Get the value of custom angle property, defined on the root element.
     const rootElement = document.documentElement;
     const angleRaw = window
@@ -66,8 +112,7 @@ function raiseMidLetter(p) {
     let angle = Number(angleRaw.slice(0, -3)); //Strip the "deg"
     angle = angle * (Math.PI / 180); // Convert to radians
 
-    const elevation = Math.sin(angle) * width; // Find the elevation, using sine
-    console.log(window.getComputedStyle(left).width);
+    const elevation = Math.sin(angle) * (width * 0.9) ; // Find the elevation, using sine
     mid.style.bottom = `${elevation}px`;
 /*
 left:  /|
@@ -78,12 +123,3 @@ left:  /|
    base line
 */
 }
-
-const obj = splitKeyword("PoKéMoN")
-const p = document.createElement("p");
-p.innerHTML = `<span class="antiClockwise">${makeOverlappingLetters(obj.left)}</span>`
-            + `<span class="mid">${obj.mid}</span>`
-            + `<span class="clockwise">${makeOverlappingLetters(obj.right)}</span>`;
-fontSpace.appendChild(p);
-
-raiseMidLetter(p);
