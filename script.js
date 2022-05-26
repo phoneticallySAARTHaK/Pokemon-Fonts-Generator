@@ -1,3 +1,19 @@
+// Slider outpuut
+const range = document.querySelector('#size');
+const output = document.querySelector('output');
+
+output.textContent = `${range.value}px`;
+
+range.addEventListener('input', function() {
+  output.textContent = `${range.value}px`;
+});
+
+// Generate button
+const btn = document.querySelector("button");
+
+
+
+
 const fontSpace = document.querySelector(".font-space");
 
 // Wrap letters in <span> for the overlappinng effect
@@ -71,6 +87,3 @@ p.innerHTML = `<span class="antiClockwise">${makeOverlappingLetters(obj.left)}</
 fontSpace.appendChild(p);
 
 raiseMidLetter(p);
-
-const btn = document.querySelector("button");
-btn.addEventListener("click", () => {console.log("submit")} );

@@ -11,11 +11,13 @@
     </head>
     <body>
         <section>
-            <h1>Pokemon fonts Generator</h1>
+            <div class="shade"><h1>Pokemon fonts Generator</h1></div>
+            
             <div class="form">
                 <label for="text">Text: </label><br>
+                <label class="hint">Enclose a word in **...** for the tilt effect</label>
                 <textarea id="text" placeholder="**PoKéMoN**" rows="4"></textarea>
-                <br>                
+                <br>
                 <label for="size">Font size:</label> <br>
                 <div class="range">
                 <input type="range" min="12" max="48" step="2" id="size" value="24">
@@ -29,7 +31,7 @@
                 <br>
                 <button type="submit">Generate</button>
             </div>
-        <!-- <div class="font-space"></div> -->
+        <div class="font-space"></div>
         </section>
     </body>
 </html>
