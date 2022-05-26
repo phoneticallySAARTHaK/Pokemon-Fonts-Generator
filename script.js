@@ -1,4 +1,4 @@
-const article = document.querySelector("article");
+const fontSpace = document.querySelector(".font-space");
 
 // Wrap letters in <span> for the overlappinng effect
 // (string, bool) => string
@@ -68,7 +68,9 @@ const p = document.createElement("p");
 p.innerHTML = `<span class="antiClockwise">${makeOverlappingLetters(obj.left)}</span>`
             + `<span class="mid">${obj.mid}</span>`
             + `<span class="clockwise">${makeOverlappingLetters(obj.right)}</span>`;
-
-article.appendChild(p);
+fontSpace.appendChild(p);
 
 raiseMidLetter(p);
+
+const btn = document.querySelector("button");
+btn.addEventListener("click", () => {console.log("submit")} );
