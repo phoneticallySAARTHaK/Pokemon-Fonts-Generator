@@ -45,10 +45,7 @@ function processText(text) {
             continue;
         }
         if (word.slice(0, 2) === "**" && word.slice(-2) === "**") {
-            const obj = splitKeyword(word.slice(2, -2));
-            str = `<span class="antiClockwise">${makeOverlappingLetters(obj.left)}</span>`
-                + `<span class="mid">${obj.mid}</span>`
-                + `<span class="clockwise">${makeOverlappingLetters(obj.right)}</span>`;
+            str = makeTilted(word);
         }
         else {
             str = makeOverlappingLetters(word);
@@ -56,6 +53,13 @@ function processText(text) {
         strArray.push(str);
     }
     return strArray.join(" ");
+}
+
+function makeTilted(word) {
+    const obj = splitKeyword(word.slice(2, -2));
+    return `<span class="antiClockwise">${makeOverlappingLetters(obj.left)}</span>`
+                + `<span class="mid">${obj.mid}</span>`
+                + `<span class="clockwise">${makeOverlappingLetters(obj.right)}</span>`;
 }
 
 function raiseAllMiddleLetters(p) {
