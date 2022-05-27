@@ -1,0 +1,4 @@
+[build]
+  command = "npx parcel build index.html"
+  functions = "netlify/functions"
+  publish = "dist"
