@@ -4,20 +4,22 @@
   "description": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "rm -rf .parcel_cache; npx parcel build index.html"
+    "build": "npx parcel build index.html"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/phoneticallySAARTHaK/-Pokemon-Fonts-Generator-.git"
+    "url": "git+https://github.com/phoneticallySAARTHaK/Pokemon-Fonts-Generator.git"
   },
   "author": "Sarthak",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/phoneticallySAARTHaK/-Pokemon-Fonts-Generator-/issues"
+    "url": "https://github.com/phoneticallySAARTHaK/Pokemon-Fonts-Generator/issues"
   },
-  "homepage": "https://github.com/phoneticallySAARTHaK/-Pokemon-Fonts-Generator-#readme",
+  "homepage": "https://github.com/phoneticallySAARTHaK/Pokemon-Fonts-Generator#readme",
   "dependencies": {
-    "html-to-image": "^1.9.0",
+    "html-to-image": "^1.9.0"
+  },
+  "devDependencies": {
     "parcel": "^2.6.0"
   }
 }
