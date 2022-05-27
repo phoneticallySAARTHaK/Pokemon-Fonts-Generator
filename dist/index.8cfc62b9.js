@@ -583,7 +583,8 @@ function makeOverlappingLetters(text) {
 }
 // Splits the string for the tilt effect
 function splitKeyword(text) {
-    let left = mid = right = "";
+    let left, mid, right;
+    left = mid = right = "";
     if (text.length % 2 == 0) {
         left = text.substr(0, text.length / 2);
         right = text.substr(text.length / 2);

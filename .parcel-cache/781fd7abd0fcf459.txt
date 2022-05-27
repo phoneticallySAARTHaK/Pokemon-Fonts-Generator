@@ -1,11 +1,14 @@
-4270
-52/home/sarthak/git/pokemon/dist/index.8cfc62b9.js.map1653667482868746717 0
-49/home/sarthak/git/pokemon/dist/index.3a01df49.css1653667482865413378 0
-66/home/sarthak/git/pokemon/dist/pokemon_solid-webfont.61f277c1.woff1653667482805413290 0
-67/home/sarthak/git/pokemon/dist/pokemon_solid-webfont.72c6dbe3.woff21653667482805413290 0
-30/home/sarthak/git/pokemon/dist1653667482872080055 1
+4278
+52/home/sarthak/git/pokemon/dist/index.8cfc62b9.js.map1653668061529148793 0
+48/home/sarthak/git/pokemon/dist/index.ba82b90a.js1653667643005614755 0
+49/home/sarthak/git/pokemon/dist/index.fafa5da6.css1653667643005614755 0
+49/home/sarthak/git/pokemon/dist/index.3a01df49.css1653668061522482124 0
+66/home/sarthak/git/pokemon/dist/pokemon_solid-webfont.61f277c1.woff1653668061482482115 0
+67/home/sarthak/git/pokemon/dist/pokemon_solid-webfont.3ab782ec.woff21653667642218947251 0
+67/home/sarthak/git/pokemon/dist/pokemon_solid-webfont.72c6dbe3.woff21653668061475815446 0
+30/home/sarthak/git/pokemon/dist1653668061532482127 1
 35/home/sarthak/git/pokemon/style.css1653666134782096264 0
-35/home/sarthak/git/pokemon/script.js1653664697475250103 0
+35/home/sarthak/git/pokemon/script.js1653668027225806852 0
 59/home/sarthak/git/pokemon/node_modules/picocolors/README.md1653667424348655307 0
 65/home/sarthak/git/pokemon/node_modules/picocolors/picocolors.d.ts1653667424365322001 0
 63/home/sarthak/git/pokemon/node_modules/picocolors/picocolors.js1653667424325321935 0
@@ -54,6 +57,7 @@
 81/home/sarthak/git/pokemon/node_modules/css-select/lib/pseudo-selectors/index.d.ts1653667424538655621 0
 87/home/sarthak/git/pokemon/node_modules/css-select/lib/pseudo-selectors/aliases.d.ts.map1653667424481988861 0
 70/home/sarthak/git/pokemon/node_modules/css-select/lib/pseudo-selectors1653667424541988960 1
+53/home/sarthak/git/pokemon/dist/index.fafa5da6.css.map1653667643005614755 0
 68/home/sarthak/git/pokemon/node_modules/css-select/lib/types.d.ts.map1653667424518655588 0
 68/home/sarthak/git/pokemon/node_modules/css-select/lib/procedure.d.ts1653667424538655621 0
 64/home/sarthak/git/pokemon/node_modules/css-select/lib/index.d.ts1653667424535322282 0
@@ -409,6 +413,7 @@
 67/home/sarthak/git/pokemon/node_modules/@parcel/workers/lib/types.js1653667424548655638 0
 82/home/sarthak/git/pokemon/node_modules/@parcel/workers/lib/process/ProcessChild.js1653667424511988911 0
 66/home/sarthak/git/pokemon/node_modules/@parcel/workers/lib/process1653667424515322249 1
+58/home/sarthak/git/pokemon/dist/original-fonts.1c608cfe.png1653667642398947442 0
 72/home/sarthak/git/pokemon/node_modules/@parcel/workers/lib/WorkerFarm.js1653667424555322316 0
 70/home/sarthak/git/pokemon/node_modules/@parcel/workers/lib/cpuCount.js1653667424451988811 0
 72/home/sarthak/git/pokemon/node_modules/@parcel/workers/lib/childState.js1653667424418655423 0
@@ -786,7 +791,7 @@
 73/home/sarthak/git/pokemon/node_modules/@parcel/markdown-ansi/package.json1653667424385322034 0
 52/home/sarthak/git/pokemon/node_modules/@parcel/utils1653667424651989142 1
 76/home/sarthak/git/pokemon/node_modules/@parcel/optimizer-terser/package.json1653667424371988679 0
-48/home/sarthak/git/pokemon/dist/index.8cfc62b9.js1653667482868746717 0
+48/home/sarthak/git/pokemon/dist/index.8cfc62b9.js1653668061525815459 0
 71/home/sarthak/git/pokemon/node_modules/@parcel/optimizer-terser/LICENSE1653667424291988546 0
 76/home/sarthak/git/pokemon/node_modules/@parcel/transformer-json/package.json1653667424368655340 0
 67/home/sarthak/git/pokemon/node_modules/@parcel/transformer-json/lib1653667424321988596 1
@@ -875,6 +880,7 @@
 84/home/sarthak/git/pokemon/node_modules/@parcel/bundler-default/src/DefaultBundler.js1653667424391988712 0
 78/home/sarthak/git/pokemon/node_modules/@parcel/packager-css/lib/CSSPackager.js1653667424328655274 0
 84/home/sarthak/git/pokemon/node_modules/@parcel/reporter-dev-server/src/types.js.flow1653667424331988613 0
+52/home/sarthak/git/pokemon/dist/index.ba82b90a.js.map1653667643008948092 0
 86/home/sarthak/git/pokemon/node_modules/@parcel/reporter-dev-server/src/serverErrors.js1653667424415322084 0
 70/home/sarthak/git/pokemon/node_modules/@parcel/reporter-dev-server/src1653667424561988993 1
 66/home/sarthak/git/pokemon/node_modules/@parcel/reporter-dev-server1653667424565322332 1
@@ -977,7 +983,7 @@
 128/home/sarthak/git/pokemon/node_modules/@parcel/node-resolver-core/test/fixture/node_modules/side-effects-package-redirect-up/foo1653667424741989291 1
 124/home/sarthak/git/pokemon/node_modules/@parcel/node-resolver-core/test/fixture/node_modules/side-effects-package-redirect-up1653667424741989291 1
 36/home/sarthak/git/pokemon/index.html1653665970378002368 0
-53/home/sarthak/git/pokemon/dist/index.3a01df49.css.map1653667482865413378 0
+53/home/sarthak/git/pokemon/dist/index.3a01df49.css.map1653668061522482124 0
 121/home/sarthak/git/pokemon/node_modules/@parcel/node-resolver-core/test/fixture/node_modules/package-fallback/package.json1653667424718655919 0
 117/home/sarthak/git/pokemon/node_modules/@parcel/node-resolver-core/test/fixture/node_modules/package-fallback/index.js1653667424605322398 0
 108/home/sarthak/git/pokemon/node_modules/@parcel/node-resolver-core/test/fixture/node_modules/package-fallback1653667424718655919 1
@@ -991,7 +997,7 @@
 153/home/sarthak/git/pokemon/node_modules/@parcel/node-resolver-core/test/fixture/node_modules/.pnpm/source-pnpm@1.0.0/node_modules/source-pnpm/package.json1653667424715322580 0
 62/home/sarthak/git/pokemon/node_modules/nan/doc/v8_internals.md1653667424588655704 0
 148/home/sarthak/git/pokemon/node_modules/@parcel/node-resolver-core/test/fixture/node_modules/.pnpm/source-pnpm@1.0.0/node_modules/source-pnpm/dist.js1653667424548655638 0
-58/home/sarthak/git/pokemon/dist/original-fonts.44a50786.png1653667482808746628 0
+58/home/sarthak/git/pokemon/dist/original-fonts.44a50786.png1653668061485815449 0
 140/home/sarthak/git/pokemon/node_modules/@parcel/node-resolver-core/test/fixture/node_modules/.pnpm/source-pnpm@1.0.0/node_modules/source-pnpm1653667424711989242 1
 115/home/sarthak/git/pokemon/node_modules/@parcel/node-resolver-core/test/fixture/node_modules/.pnpm/source-pnpm@1.0.01653667424545322299 1
 123/home/sarthak/git/pokemon/node_modules/@parcel/node-resolver-core/test/fixture/node_modules/package-browser-alias/nested.js1653667424681989192 0
@@ -1024,6 +1030,7 @@
 78/home/sarthak/git/pokemon/node_modules/@swc/helpers/lib/_async_to_generator.js1653667424411988745 0
 73/home/sarthak/git/pokemon/node_modules/@parcel/package-manager/src/Npm.js1653667424578655688 0
 81/home/sarthak/git/pokemon/node_modules/@parcel/node-resolver-core/src/builtins.js1653667424541988960 0
+66/home/sarthak/git/pokemon/dist/pokemon_solid-webfont.c9bd6317.woff1653667642392280769 0
 69/home/sarthak/git/pokemon/node_modules/@parcel/node-resolver-core/src1653667424681989192 1
 65/home/sarthak/git/pokemon/node_modules/@parcel/node-resolver-core1653667424711989242 1
 64/home/sarthak/git/pokemon/node_modules/@parcel/watcher/README.md1653667424545322299 0
@@ -2466,11 +2473,11 @@
 64/home/sarthak/git/pokemon/node_modules/@lezer/lr/dist/stack.d.ts1653667424455322150 0
 83/home/sarthak/git/pokemon/node_modules/caniuse-lite/data/features/resizeobserver.js1653667424808656068 0
 72/home/sarthak/git/pokemon/node_modules/html-to-image/es/cloneNode.js.map1653667472445397879 0
-25/home/sarthak/git/pokemon1653667481475411329 1
+25/home/sarthak/git/pokemon1653668060052481766 1
 70/home/sarthak/git/pokemon/node_modules/yaml/browser/types/timestamp.js1653667424568655671 0
 70/home/sarthak/git/pokemon/node_modules/@parcel/workers/src/cpuCount.js1653667424455322150 0
 73/home/sarthak/git/pokemon/node_modules/caniuse-lite/data/features/webm.js1653667424831989440 0
-41/home/sarthak/git/pokemon/dist/index.html1653667482865413378 0
+41/home/sarthak/git/pokemon/dist/index.html1653668061522482124 0
 84/home/sarthak/git/pokemon/node_modules/abortcontroller-polyfill/dist/umd-polyfill.js1653667424471988844 0
 84/home/sarthak/git/pokemon/node_modules/caniuse-lite/data/features/abortcontroller.js1653667424375322018 0
 83/home/sarthak/git/pokemon/node_modules/css-select/lib/pseudo-selectors/aliases.d.ts1653667424525322266 0
@@ -3327,7 +3334,7 @@
 83/home/sarthak/git/pokemon/node_modules/node-gyp-build-optional-packages/optional.js1653667424348655307 0
 85/home/sarthak/git/pokemon/node_modules/node-gyp-build-optional-packages/build-test.js1653667424321988596 0
 56/home/sarthak/git/pokemon/node_modules/nth-check/lib/esm1653667424498655555 1
-38/home/sarthak/git/pokemon/package.json1653667472502064631 0
+38/home/sarthak/git/pokemon/package.json1653667632972270633 0
 86/home/sarthak/git/pokemon/node_modules/caniuse-lite/data/features/fieldset-disabled.js1653667424755322647 0
 79/home/sarthak/git/pokemon/node_modules/node-gyp-build-optional-packages/LICENSE1653667424285321869 0
 75/home/sarthak/git/pokemon/node_modules/@swc/helpers/lib/_super_prop_base.js1653667424571989010 0
@@ -3359,6 +3366,7 @@
 70/home/sarthak/git/pokemon/node_modules/posthtml-render/dist/index.d.ts1653667424411988745 0
 60/home/sarthak/git/pokemon/node_modules/@parcel/cache/LICENSE1653667424291988546 0
 68/home/sarthak/git/pokemon/node_modules/posthtml-render/dist/index.js1653667424325321935 0
+51/home/sarthak/git/pokemon/dist/favicon.6d6bcbe3.ico1653667642218947251 0
 68/home/sarthak/git/pokemon/node_modules/entities/lib/maps/legacy.json1653667424475322183 0
 64/home/sarthak/git/pokemon/node_modules/ordered-binary/index.d.ts1653667424448655472 0
 90/home/sarthak/git/pokemon/node_modules/lmdb/dependencies/lmdb/libraries/liblmdb/mdb_stat.11653667424545322299 0
@@ -3616,7 +3624,7 @@
 75/home/sarthak/git/pokemon/node_modules/css-tree/lib/syntax/node/Selector.js1653667424691989208 0
 65/home/sarthak/git/pokemon/node_modules/css-tree/lib/syntax/pseudo1653667424691989208 1
 77/home/sarthak/git/pokemon/node_modules/htmlnano/docs/docs/010-introduction.md1653667424611989076 0
-51/home/sarthak/git/pokemon/dist/favicon.eee7a1e8.ico1653667482805413290 0
+51/home/sarthak/git/pokemon/dist/favicon.eee7a1e8.ico1653668061475815446 0
 64/home/sarthak/git/pokemon/node_modules/@parcel/fs/lib/browser.js1653667424358655323 0
 90/home/sarthak/git/pokemon/node_modules/@parcel/workers/test/integration/workerfarm/echo.js1653667424475322183 0
 72/home/sarthak/git/pokemon/node_modules/css-tree/lib/syntax/pseudo/not.js1653667424668655836 0
