@@ -1,6 +1,6 @@
 :root {
     --base-font-size: 24px;
-    --font-size: 1.5em;
+    --font-size: 3em;
     --fill-color: rgba(249,201,50,255);
     --stroke-color: rgba(52,92,161,255);
     --stroke-width: 0.05em;
@@ -92,7 +92,11 @@ article {
 
 @media screen and (min-width: 600px) {
     .form, article {
-        width: 540px;
+        width: 485px;
+    }
+
+    :root {
+        --font-size: 5em;
     }
 }
 
