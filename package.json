@@ -1,0 +1,26 @@
+{
+  "name": "pokemon-font-generator",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx parcel build index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/phoneticallySAARTHaK/-Pokemon-Fonts-Generator-.git"
+  },
+  "author": "sarthak",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/phoneticallySAARTHaK/-Pokemon-Fonts-Generator-/issues"
+  },
+  "homepage": "https://github.com/phoneticallySAARTHaK/-Pokemon-Fonts-Generator-#readme",
+  "devDependencies": {
+    "parcel": "^2.6.0",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "html-to-image": "^1.9.0"
+  }
+}
