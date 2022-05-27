@@ -1,37 +1,66 @@
-const textarea = document.querySelector("textarea");
+const section = document.querySelector("section");
+const textarea = document.querySelector('input[type="text"]');
 const fontSpace = document.querySelector(".font-space");
 const range = document.querySelector('#size');
 const output = document.querySelector('output');
 const btn = document.querySelector("button");
 
+/* in ES 5 */
+var htmlToImage = require('html-to-image');
+
+
 // Slider outpuut
-output.textContent = `${range.value}px`
+output.textContent = `${range.value}`
 range.addEventListener('input', function() {
-  output.textContent = `${range.value}px`;
+  output.textContent = `${range.value}`;
 });
 
 // Generate button
 btn.addEventListener("click", generate);
 
 function generate() {
+    clearImg();
     clearP();
     let text = textarea.value;
-    const sizeStr = output.value;
-    const size = Number(sizeStr.slice(0, -2));
+    const size = output.value;
 
-    fontSpace.style.fontSize = sizeStr;
+    fontSpace.style.fontSize = `${size}px`;
     text = processText(text);
 
     const p = document.createElement("p");
+    p.setAttribute("class", "fonts");
     p.innerHTML = text;
     fontSpace.appendChild(p);
     raiseAllMiddleLetters(p);
+
+    htmlToImage.toPng(p)
+      .then(function (dataUrl) {
+        var img = new Image();
+        img.src = dataUrl;
+        return img;
+      })
+      .then( (img) => {
+          img.setAttribute("class", "rendered")
+          fontSpace.removeChild(p)
+          fontSpace.appendChild(img)
+      })
+      .catch(function (error) {
+        console.error('oops, something went wrong!', error);
+      });
 }
 
+
 function clearP() {
-    const p = document.querySelector("p");
+    const p = document.querySelector(".fonts");
     if (p) {
         fontSpace.removeChild(p);
+    }
+}
+
+function clearImg() {
+    const img = document.querySelector(".rendered");
+    if (img) {
+        fontSpace.removeChild(img);
     }
 }
 
@@ -127,3 +156,6 @@ left:  /|
    base line
 */
 }
+
+textarea.value = "**PoKéMoN**";
+generate();
