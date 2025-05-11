@@ -1,8 +1,8 @@
 :root {
     --base-font-size: 24px;
     --font-size: 2em;
-    --fill-color: rgba(249,201,50,255);
-    --stroke-color: rgba(52,92,161,255);
+    --fill-color: rgba(249,201,50,1);
+    --stroke-color: rgba(52,92,161,1);
     --stroke-width: 0.05em;
 
     --rotate-anti-clockwise: -10deg;
@@ -32,7 +32,10 @@ h1 {
     font-size: 2em;
     background: linear-gradient(90deg, rgba(208,159,57,1) 0%, rgba(32,173,166,1) 51%, rgba(208,159,57,1) 100%);
     -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
     -webkit-background-clip: text;
+    background-clip: text;
+    
     color: black;
 }
 
@@ -177,6 +180,10 @@ button {
     -webkit-text-stroke-width: var(--stroke-width);
     -webkit-text-stroke-color: var(--stroke-color);
     /* Source: https://stackoverflow.com/a/14711801 */
+    text-fill-color: var(--fill-color);
+    text-stroke-width: var(--stroke-width);
+    text-stroke-color: var(--stroke-color);
+    paint-order: fill stroke;
 }
 
 span {
@@ -198,4 +205,6 @@ span.mid {
 .rendered {
     display: block;
     margin: auto;
+    max-width: 100%;
+    object-fit: contain;
 }
