@@ -25,6 +25,7 @@ function generate() {
     const size = output.value;
 
     fontSpace.style.fontSize = `${size}px`;
+    fontSpace.style.setProperty("--stroke-width", `${size / 16 * 0.25}rem`)
     text = processText(text);
 
     const p = document.createElement("p");
