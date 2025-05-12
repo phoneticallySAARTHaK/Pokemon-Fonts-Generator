@@ -6,8 +6,12 @@ const output = document.querySelector('output');
 const btn = document.querySelector("button");
 
 /* in ES 5 */
-var htmlToImage = require('html-to-image');
+import * as htmlToImage from 'html-to-image';
 
+
+textarea.addEventListener('focus', (e) => {
+    e.target.select();
+})
 
 // Slider outpuut
 output.textContent = `${range.value}`
