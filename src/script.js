@@ -18,12 +18,7 @@ range.addEventListener("input", function () {
 });
 
 // Generate button
-btn.addEventListener("click", () => {
-  if (needsFallback()) {
-    handleFallbackSetup();
-  }
-  generate();
-});
+btn.addEventListener("click", generate);
 
 function generate() {
   clear();
@@ -203,7 +198,11 @@ function handleFallbackSetup() {
 
 const cfDev = "http://127.0.0.1:5001/pokemon-fonts/us-central1/generate";
 const cfProd = "https://generate-rkca5556oa-uc.a.run.app/";
-
+window.addEventListener("DOMContentLoaded", () => {
+  if (needsFallback()) {
+    handleFallbackSetup();
+  }
+});
 function generateFallback() {
   clear();
   const p = document.createElement("p");
