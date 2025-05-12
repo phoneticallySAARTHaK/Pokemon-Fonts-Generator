@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <title>Pokemon Fonts Generator</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta charset="utf-8" />
+    <base href="." />
+    <link rel="stylesheet" href="./src/style.css" />
+    <link href="assets/favicon.ico" rel="icon" type="image/x-icon" />
+    <script src="./src/script.js" type="module" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap"
+      rel="stylesheet"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <main>
+      <h1>Pokemon Fonts Generator</h1>
+      <article>
+        <details>
+          <summary>Why make yet another fonts generator?</summary>
+          <hr />
+          <p>
+            There already are a bunch of these
+            <em>PoKéMoN fonts generators</em>. So why need another one?
+          </p>
+          <p>
+            They are just not good enough. Compare the
+            <strong>original</strong> fonts:
+          </p>
+          <img src="assets/original-fonts.png" alt="Orignal pokemon fonts" />
+          <p>
+            Rest of the website just apply borders to the ttf font file. They
+            don't apply the overlapping effect.
+          </p>
+          <p>That tiny detail is bothersome</p>
+        </details>
+
+        <p>
+          <strong>Note:</strong>
+          As of May, there seems to be some issue with Safari 18 version that
+          causes the generated image to render without the blue stroke border. I
+          am working on a fix, but for now, please use a non-apple device, or a
+          different browser if you're in EU.
+        </p>
+        <p>
+          This issue is a likely a bug in webkit, and thus, using a different
+          browser on an apple device, except EU will not work
+        </p>
+      </article>
+      <hr />
+      <section>
+        <div class="form">
+          <label for="text">Text: </label><br />
+          <label class="hint"
+            >Enclose a word in **...** for the tilt effect. Space is not
+            allowed</label
+          >
+          <input type="text" id="text" />
+          <br />
+          <label for="size">Font size:</label> <br />
+          <div class="range">
+            <input
+              type="range"
+              min="12"
+              max="48"
+              step="2"
+              id="size"
+              value="24"
+            />
+            <output for="size"></output>
+          </div>
+          <button type="submit">Generate</button>
+        </div>
+        <div id="note" class="form"></div>
+        <div class="font-space"></div>
+      </section>
+    </main>
+  </body>
+</html>
