@@ -17,6 +17,10 @@
   "bugs": {
     "url": "https://github.com/phoneticallySAARTHaK/Pokemon-Fonts-Generator/issues"
   },
+  "engines": {
+    "node": ">=22",
+    "pnpm": ">=9"
+  },
   "homepage": "https://github.com/phoneticallySAARTHaK/Pokemon-Fonts-Generator#readme",
   "dependencies": {
     "html-to-image": "^1.11.13",
