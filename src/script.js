@@ -187,7 +187,7 @@ function handleFallbackSetup() {
     "If you are using an Apple Device, the blue border may not show up on the image. <br> " +
     "You can click the 'Generate fallback' button below to get the server generated image. <br> " +
     "Note that it can take a couple of seconds to load. <br>" +
-    "<strong> This is a limited, temporary fix.</strong>";
+    "<strong> This is a limited, temporary fix. Size has no effect.</strong>";
 
   const button = document.createElement("button");
   button.innerHTML = "Generate fallback";
